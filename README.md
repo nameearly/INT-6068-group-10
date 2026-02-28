@@ -29,8 +29,25 @@ pip install -r requirements.txt
 ```
 
 
-#### 1. 启动简化仿真环境
-简化仿真包含3个变体，入口为各变体目录下的`结合体.py`，路径在「简化仿真模拟环境下的结果/」：
+
+
+#### 1. ☆启动深度学习实验（TD3算法）
+该模块基于自定义TD3实现，路径在「深度学习尝试/」：
+- **静态环境TD3训练（完整版本）**：
+-[点击链接跳转Colab，逐步运行即可预览相同效果，省去环境部署（但是跑完要很久）](https://colab.research.google.com/drive/1do7k5KFhJ-CpMvLQHdmNUIqYWpbaNtfp#scrollTo=ZqEK_3Anj6BC)
+
+  ```bash
+  cd 深度学习尝试/deeplearning1/
+  python train.py
+  ```
+- **增强版TD3训练（开发中）**：
+  ```bash
+  cd 深度学习尝试/deeplearning2/
+  python train.py
+  ```
+#### 2. 启动简化仿真环境
+简化仿真包含3个变体，入口为各变体目录下的`结合体.py`，路径在「简化仿真模拟环境下的结果/」。**因为可能有调参需求，当前所有代码已修改为纯规则-based启发式算法的空白对照组，没有加载和使用RL训练模型。：**
+
 ```bash
 # 示例：启动静态模拟（动态/安全模块替换目录即可）
 cd 简化仿真模拟环境下的结果/静态模拟/
@@ -44,20 +61,6 @@ python 结合体.py
 cd 简化仿真模拟环境下的结果/安全模块/
 python 结合体.py
 ```
-
-#### 2. ☆启动深度学习实验（TD3算法）
-该模块基于自定义TD3实现，路径在「深度学习尝试/」：
-- **静态环境TD3训练（完整版本）**：
--[点击链接跳转Colab，逐步运行即可预览相同效果，省去环境部署（但是跑完要很久）](https://colab.research.google.com/drive/1do7k5KFhJ-CpMvLQHdmNUIqYWpbaNtfp#scrollTo=ZqEK_3Anj6BC)
-  ```bash
-  cd 深度学习尝试/deeplearning1/
-  python train.py
-  ```
-- **增强版TD3训练（开发中）**：
-  ```bash
-  cd 深度学习尝试/deeplearning2/
-  python train.py
-  ```
 
 #### 3. 启动非核心子项目（PyBullet物理仿真）
 该模块是项目最早期完成的实现，所有操作均在「基于pybullet的仿真模拟训练/pybullet 版 7.21/」目录下执行，再强调一遍，**pybullet版本 是一个简单的奖励系统，主要关注物理仿真、目标达成和碰撞避免。要成功运行项目，环境需具备[C++开发环境](https://blog.csdn.net/qq_55149044/article/details/142153630)，我C盘放不下了，不是很建议。**
