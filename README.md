@@ -18,6 +18,7 @@ pybullet版本 是一个简单的奖励系统，主要关注目标达成和碰�
 ### 二、项目启动方法
 #### 前置准备：安装依赖
 首先将项目代码下载/克隆到本地，建议创建Python虚拟环境（Python 3.8+），然后安装依赖（核心依赖文件在PyBullet仿真目录下）：
+但对于本学期的项目来说，**pybullet项目不是必须的**，如果要安装pybullet项目环境需具备[C++开发环境](https://blog.csdn.net/qq_55149044/article/details/142153630)，那个太臃肿了，不是很建议。
 ```bash
 # 进入PyBullet仿真核心目录
 cd 基于pybullet的仿真模拟训练/pybullet 版 7.21/
