@@ -94,8 +94,8 @@ class MultiAgentDroneDeliveryEnv(Env):
 - goal_radius = 5.0 目标半径
 - battery_capacity = 100 电池容量
   > 把 city_size = 500 变小，画面更紧凑
-> goal_radius = 10 变大，无人机更容易到达目标
-> max_speed = 5 变慢，飞得更稳
+  > goal_radius = 10 变大，无人机更容易到达目标
+  > max_speed = 5 变慢，飞得更稳
 
 ## 4. 环境初始化 / 重置模块 `reset()`
 
